@@ -618,7 +618,6 @@ RECORD DROP
 }
 .record-info p{
     margin:10px 0;
-    opacity:.65;
 }
 .condition{
     display:inline-block;
@@ -630,7 +629,7 @@ RECORD DROP
 }
 .record-info strong{
     display:block;
-    font-size:32px;
+    font-size:30px;
     margin:18px 0;
 }
 .record-info a{
@@ -843,4 +842,127 @@ MOBILE
 
     }
 
+}
+
+/*====================================
+
+RECORD DROP
+
+====================================*/
+
+.record-drop{
+    background:#0000fb;
+    padding:110px 70px;
+}
+
+.record-drop .section-title{
+    color:#C8FF00;
+}
+
+.record-copy{
+    font-family:"VT323", monospace;
+    color:#fff;
+    font-size:28px;
+    margin:25px 0 70px;
+}
+
+.record-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:40px;
+
+}
+
+.record-card{
+    background:transparent;
+}
+
+.record-image{
+    position:relative;
+    margin-bottom:25px;
+}
+
+.record-card img{
+    margin-bottom:25px;
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    display:block;
+    transition:.35s;
+}
+
+.record-card:hover img{
+    transform:scale(1.03);
+}
+
+.record-info h3{
+    font-size:56px;
+    line-height:.9;
+    text-transform:lowercase;
+    color:#C8FF00;
+    margin-bottom:8px;
+}
+
+.record-info p{
+    font-family:"VT323", monospace;
+    font-size:28px;
+    color:#fff;
+    margin-bottom:25px;
+}
+
+.condition{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#ff2fa2;
+    color:#fff;
+    padding:8px 14px;
+    font-family:"VT323", monospace;
+    font-size:22px;
+    line-height:1;
+}
+
+.record-info strong{
+    display:block;
+    font-size:72px;
+    color:#f5f219;
+    margin-bottom:30px;
+}
+
+.record-info a{
+    display:block;
+    width:100%;
+    padding:22px;
+    text-align:center;
+    text-decoration:none;
+    background:#ff2fa2;
+    color:#fff;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    transition:.25s;
+}
+
+/*=========================
+
+RESPONSIVE RECORD DROP
+
+=========================*/
+
+@media (max-width:1200px){
+    .record-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media (max-width:768px){
+    .record-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media (max-width:480px){
+    .record-grid{
+        grid-template-columns:1fr;
+    }
 }
