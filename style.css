@@ -794,3 +794,53 @@ nav a{
 }
 
 }
+
+/*==================================
+
+MOBILE
+
+==================================*/
+
+@media (max-width:768px){
+
+    .track{
+
+        display:grid;
+
+        grid-template-columns:50px 1fr;
+
+        grid-template-areas:
+            "number artist"
+            ". song";
+
+        gap:6px 18px;
+
+    }
+
+    .number{
+
+        grid-area:number;
+
+    }
+
+    .artist{
+
+        grid-area:artist;
+
+        font-size:clamp(28px,8vw,44px);
+
+    }
+
+    .song{
+
+        grid-area:song;
+
+        justify-self:start;
+
+        text-align:left;
+
+        font-size:clamp(18px,5vw,26px);
+
+    }
+
+}
